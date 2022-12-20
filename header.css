@@ -1,1 +1,84 @@
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #1D2731;
+}
 
+.logo {
+  padding-left: 5%;
+  color: #D9B310;;
+}
+
+.header1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+}
+
+.centerhamburger {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #DFDFDF;
+}
+
+.hamburger-container {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  padding-right: 5%;
+}
+
+.hamburger-container span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 60%;
+  background-color: #D9B310;
+  border-radius: 9px;
+  transition: 250ms ease-in-out;
+  left: 0;
+}
+
+.hamburger-container span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-container span:nth-child(2), .hamburger-container span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger-container span:nth-child(4){
+  top: 36px;
+}
+
+.hamburger-container.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 25%;
+}
+
+.hamburger-container.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-container.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-container.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 25%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 10%;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700&family=Ubuntu:ital,wght@1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, button {
+  font-family: 'Ubunto', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1.5em;
+  color: #083C5D;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p, a, .logo, .quote, h2 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5em;
+}
+
+p, h2 {
+  font-weight: bold;
+}

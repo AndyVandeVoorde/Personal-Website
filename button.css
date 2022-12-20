@@ -1,0 +1,63 @@
+.button {
+  /* position: relative; */
+  justify-self: center;
+  background-color: #D9B310;
+  align-items: center;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms;
+  margin-top: 10%;
+}
+
+.button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  background-color: #083C5D;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  background-color: #328CC1;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button:hover::after, .button:active::after {
+  left: 0px;
+  top: 0px;
+}
+
+.button:hover::before {
+  left: 0px;
+  top: 3px;
+}
+
+.button:hover {
+  margin-left: 0px;
+  bottom: calc(11% - 3px);
+}
+
+.button:active::before {
+  left: 0px;
+  top: 0px;
+}
+
+.button:active {
+  bottom: calc(11% - 6px);
+  margin-left: 0px;
+  box-shadow: inset 0 0 10px 4px #1d27318f;
+}

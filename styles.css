@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700&family=Ubuntu:ital,wght@1,400;1,500&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 h1, button {
   font-family: 'Ubunto', sans-serif;
   font-style: italic;
@@ -66,6 +59,7 @@ main {
   align-self: center;
   color: #D9B310;
   text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+  /* width: 100%; */
 }
 
 .button {
@@ -142,11 +136,12 @@ main {
   grid-template-rows: 1fr 1fr;
 }
 
-img {
+.headshot {
   position: absolute;
   bottom: 0;
-  height: 85%;
-  left: 39%;
+  /* height: 85%; */
+  width: 31%;
+  right: 28%;
 }
 
 .quote {
@@ -155,9 +150,11 @@ img {
   transform: rotate(180deg);
   text-shadow: -2px -2px #083C5D, -4px -4px #328CC1;
   grid-area: 1;
-  position: absolute;
-  top: 25%;
-  left: 67%
+  /* position: absolute; */
+  padding-left: 5%;
+  padding-top: 35%
+  /* top: 25%;
+  left: 67%; */
 }
 
 .intro-text {
@@ -166,7 +163,10 @@ img {
   font-weight: bold;
   text-align: start;
   font-size: 1.3em;
-  padding: 30% 11% 0 42%;
+  align-self: flex-end;
+  padding-right: 15%;
+  padding-bottom: 10%;
+  /* padding: 30% 11% 0 42%; */
 }
 
 .blue {
@@ -192,87 +192,41 @@ img {
   box-shadow: inset 0 0 10px 4px #dfdfdf8c;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  height: 10%;
-}
-
-.logo-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-color: #1D2731;
-}
-
-.logo {
-  padding-left: 5%;
-  color: #D9B310;;
-}
-
-.header1 {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.5em;
-  text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
-}
-
-.centerhamburger {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  background-color: #DFDFDF;
-}
-
-.hamburger-container {
-  width: 60px;
-  height: 45px;
-  position: relative;
-  transition: 500ms ease-in-out;
-  cursor: pointer;
+.quote2 {
+  grid-area: right-section;
+  grid-area: 1;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 65%;
   padding-right: 5%;
 }
 
-.hamburger-container span {
-  display: block;
-  position: absolute;
-  height: 9px;
-  width: 60%;
-  background-color: #D9B310;
-  border-radius: 9px;
-  transition: 250ms ease-in-out;
-  left: 0;
+@media only screen and (max-width: 1260px) {
+  h1{
+    font-size: 4em;
+  }
+
+  .quote2 {
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding: 10%;
+    padding-top: 15%;
+    width: 70%;
+  }
+
+  .headshot {
+    height: 60%;
+    width: auto;
+  }
 }
 
-.hamburger-container span:nth-child(1) {
-  top: 0px;
-}
+@media only screen and (max-width: 1020px) {
+  h1{
+    font-size: 3.5em;
+  }
 
-.hamburger-container span:nth-child(2), .hamburger-container span:nth-child(3) {
-  top: 18px;
-}
-
-.hamburger-container span:nth-child(4){
-  top: 36px;
-}
-
-.hamburger-container.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 25%;
-}
-
-.hamburger-container.open span:nth-child(2) {
-  transform: rotate(45deg);
-}
-
-.hamburger-container.open span:nth-child(3) {
-  transform: rotate(-45deg);
-}
-
-.hamburger-container.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 25%;
+  .quote2 {
+    padding-top: 20%;
+    width: 80%;
+  }
 }

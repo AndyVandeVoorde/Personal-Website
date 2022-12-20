@@ -1,0 +1,81 @@
+.centerhamburger {
+  background-color: #1D2731;
+}
+
+.button {
+  width: 2.5em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 11%;
+}
+
+.arrow-img {
+  height: 70%;
+  padding: 10px
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.background1 {
+  background-image: url(./images/gran\ canaria\ solo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 80%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.25);
+  display: grid;
+  z-index: 1;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1D2731;
+}
+
+.quote {
+  align-self: flex-start;
+  justify-self: flex-end;
+  width: 35%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.page2 {
+  background-image: url(./images/gran\ canaria\ solo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-filter {
+  background-color: rgba(29, 39, 49, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  display: flex;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.card1 {
+  width: 5%;
+}
+
