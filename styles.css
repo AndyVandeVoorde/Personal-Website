@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700&family=Ubuntu:ital,wght@1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, button {
+  font-family: 'Ubunto', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1.5em;
+  color: #083C5D;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p, a, .logo, .quote {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5em;
+}
+
+p {
+  font-weight: bold;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  "left-section right-section";
+  grid-template-columns: 1fr 1fr;
+}
+
+.bgcolor1 {
+  background: #1D2731;
+  z-index: 2;
+}
+
+.bgcolor2 {
+  background: #DFDFDF;
+  z-index: 2;
+}
+
+.left-section {
+  height: 100%;
+  grid-area: left-section;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.title-lp {
+  align-self: center;
+  color: #D9B310;
+  text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+}
+
+.button {
+  position: relative;
+  justify-self: center;
+  background-color: #D9B310;
+  align-items: center;
+  height: 2.5em;
+  width: 8em;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms;
+  margin-top: 10%;
+}
+
+.button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: #083C5D;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  background-color: #328CC1;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button:hover::after, .button:active::after {
+  left: 0px;
+  top: 0px;
+}
+
+.button:hover::before {
+  left: 3px;
+  top: 3px;
+}
+
+.button:hover {
+  margin-left: 3px;
+  margin-top: calc(10% + 3px);
+}
+
+.button:active::before {
+  left: 0px;
+  top: 0px;
+}
+
+.button:active {
+  margin-top: calc(10% + 6px);
+  margin-left: 6px;
+  box-shadow: inset 0 0 10px 4px #1d27318f;
+}
+
+.right-section {
+  grid-area: right-section;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  left: 39%;
+}
+
+.quote {
+  font-size: 6em;
+  color: #D9B310;
+  transform: rotate(180deg);
+  text-shadow: -2px -2px #083C5D, -4px -4px #328CC1;
+  grid-area: 1;
+  position: absolute;
+  top: 25%;
+  left: 67%
+}
+
+.intro-text {
+  grid-area: 1;
+  color: #083C5D;
+  font-weight: bold;
+  text-align: start;
+  font-size: 1.3em;
+  padding: 30% 11% 0 42%;
+}
+
+.blue {
+  margin-left: 30%;
+  background-color: #083C5D;
+  color: #D9B310;
+}
+
+.blue:hover {
+  margin-left: calc(30% + 3px);
+}
+
+.blue::after {
+  background-color: #328CC1;
+}
+
+.blue::before {
+  background-color: #D9B310;
+}
+
+.blue:active {
+  margin-left: calc(30% + 6px);
+  box-shadow: inset 0 0 10px 4px #dfdfdf8c;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 10%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #1D2731;
+}
+
+.logo {
+  padding-left: 5%;
+  color: #D9B310;;
+}
+
+.header1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+}
+
+.centerhamburger {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #DFDFDF;
+}
+
+.hamburger-container {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  padding-right: 5%;
+}
+
+.hamburger-container span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 60%;
+  background-color: #D9B310;
+  border-radius: 9px;
+  transition: 250ms ease-in-out;
+  left: 0;
+}
+
+.hamburger-container span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-container span:nth-child(2), .hamburger-container span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger-container span:nth-child(4){
+  top: 36px;
+}
+
+.hamburger-container.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 25%;
+}
+
+.hamburger-container.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-container.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-container.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 25%;
+}
