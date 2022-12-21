@@ -1,0 +1,258 @@
+.page2 {
+  background-image: url(./images/gran\ canaria\ solo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1D2731;
+}
+
+.bg-filter {
+  background-color: rgba(29, 39, 49, 0.6);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.centerhamburger {
+  background-color: #1D2731;
+}
+
+.title {
+  align-self: center;
+  text-align: center;
+  text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+  color: #D9B310;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pos1 {
+  width: 30%;
+  z-index: 300;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 2.5fr 2fr 1fr;
+  background-color: #DFDFDF;
+  border-radius: 52px;
+  height: 63%;
+  width: 29%;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+h2 {
+  color: #083C5D;
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
+  color: #083C5D;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.center-card-txt {
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  justify-self: center;
+}
+
+.leader {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px 0 0;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bg1 {
+  background-image: url(./images/gran\ canaria\ solo.png);
+}
+
+.bg2 {
+  background-image: url(./images/coworkers.jpg);
+}
+
+.bg3 {
+  background-image: url(./images/NYE\ speaking.jpg);
+}
+
+.bg4 {
+  background-image: url(./images/NYE\ moment\ 1.jpg);
+}
+
+.bg5 {
+  background-image: url(./images/Conversation\ friends.jpg);
+  background-position: top;
+}
+
+.center-btn {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.button {
+  position: relative;
+  justify-self: center;
+  background-color: #D9B310;
+  align-items: center;
+  height: 2em;
+  width: 6em;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms;
+  font-size: 1.3em;
+}
+
+.button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: #083C5D;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  background-color: #328CC1;
+  z-index: -1;
+  transition: all 150ms;
+}
+
+.button:hover::after, .button:active::after {
+  left: 0px;
+  top: 0px;
+}
+
+.button:hover::before {
+  left: 3px;
+  top: 3px;
+}
+
+.button:hover {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.button:active::before {
+  left: 0px;
+  top: 0px;
+}
+
+.button:active {
+  margin-top: 6px;
+  margin-left: 6px;
+  box-shadow: inset 0 0 10px 4px #1d27318f;
+}
+
+.shape-pos {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shape1 {
+  height: 100px;
+  width: 100px;
+  background-color: #DFDFDF;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -50px 50px 0 0 #DFDFDF;
+  display: flex;
+}
+
+.shape2 {
+  height: 50px;
+  width: 100%;
+  background-color: #DFDFDF;
+  border-radius: 0 100px 0 0;
+}
+
+#pos2 {
+  height: 52%;
+  width: 24%;
+  margin: -5%;
+  z-index: 200;
+  opacity: 70%;
+  filter: brightness(70%);
+}
+
+#pos2 p {
+  font-size: 1.1em;
+}
+
+#pos2 h2 {
+  font-size: 1.6em;
+  padding-top: 2%;
+}
+
+#pos2 .button {
+  height: 1.9em;
+  width: 5.6em;
+  font-size: 1.1em;
+}
+
+#pos3 {
+  height: 45%;
+  width: 20%;
+  /* margin: 5%; */
+  z-index: 100;
+  opacity: 50%;
+  filter: brightness(50%);
+}
+
+#pos3 p {
+  font-size: 0.9em;
+}
+
+#pos3 h2 {
+  font-size: 1.4em;
+  padding-top: 2%;
+}
+
+#pos3 .button {
+  height: 1.8em;
+  width: 5.5em;
+  font-size: 1.1em;
+}
