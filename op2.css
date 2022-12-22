@@ -39,7 +39,7 @@
 #pos1 {
   width: 30%;
   z-index: 300;
-  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);
 }
 
 .card {
@@ -48,7 +48,7 @@
   background-color: #DFDFDF;
   border-radius: 52px;
   height: 63%;
-  width: 29%;
+  width: 30%;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
@@ -216,6 +216,7 @@ p {
   z-index: 200;
   opacity: 70%;
   filter: brightness(70%);
+  transition: all 500ms;
 }
 
 #pos2 p {
@@ -255,4 +256,27 @@ p {
   height: 1.8em;
   width: 5.5em;
   font-size: 1.1em;
+}
+
+/* #pos1:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);
+} */
+
+#pos2:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);
+}
+
+#pos3:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);
+}
+
+#pos2:hover + #pos1 {
+  box-shadow: none;
+}
+
+#pos3:hover ~ #pos1 {
+  box-shadow: none;
 }
