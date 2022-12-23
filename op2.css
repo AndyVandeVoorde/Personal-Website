@@ -273,10 +273,7 @@ p {
   box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.5);
 }
 
-#pos2:hover + #pos1 {
+/* #pos2:hover ~ #pos1, #pos3:hover ~ #pos1{
   box-shadow: none;
-}
+} */
 
-#pos3:hover ~ #pos1 {
-  box-shadow: none;
-}
