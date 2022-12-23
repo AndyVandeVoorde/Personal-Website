@@ -3,11 +3,26 @@
   align-items: flex-end;
   justify-content: flex-start;
   background-color: #1D2731;
+  z-index: 1000;
+  background: linear-gradient(to right, #1D2731 50%, transparent 50%) left;
+  background-size: 200% 101%;
+  transition: 1000ms ease-in-out;
+  /* flex-direction: column; */
 }
 
 .logo {
   padding-left: 5%;
-  color: #D9B310;;
+  color: #D9B310;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  transition: 1000ms ease-in-out;
+}
+
+.logo span {
+  transition: 1000ms ease-in-out;
 }
 
 .header1 {
@@ -15,19 +30,24 @@
   font-style: italic;
   font-size: 1.5em;
   text-shadow: 2px 2px #083C5D, 4px 4px #328CC1;
+  margin-left: 10px;
 }
 
 .centerhamburger {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background-color: #DFDFDF;
-}
+  background: linear-gradient(to right, transparent 50%, #DFDFDF 50%) right;
+  background-size: 200% 101%;
+  /* background-color: #DFDFDF; */
+  z-index: 1000;
+  transition: 1000ms ease-in-out;
+  }
 
 .hamburger-container {
   width: 60px;
   height: 45px;
-  position: relative;
+  position: fixed;
   transition: 500ms ease-in-out;
   cursor: pointer;
   padding-right: 5%;
@@ -37,7 +57,7 @@
   display: block;
   position: absolute;
   height: 9px;
-  width: 60%;
+  width: 45%;
   background-color: #D9B310;
   border-radius: 9px;
   transition: 250ms ease-in-out;
@@ -81,4 +101,9 @@ header {
   grid-template-columns: 1fr 1fr;
   width: 100vw;
   height: 10%;
+}
+
+#changetxt {
+  height: 100%;
+  width: 100%;
 }
