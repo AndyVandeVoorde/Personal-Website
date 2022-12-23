@@ -98,3 +98,90 @@ function learnMore() {
 }
 
 learnMoreBtn.addEventListener("click", learnMore);
+
+// #pos1 {
+//   position: absolute;
+//   top: -50px;
+//   left: 0;
+//   height: 250%;
+//   width: 100%;
+// }
+
+// .bg1 {
+//   background-size: 100%
+// }
+
+function pos1FullScreen() {
+  // pos1.style.position = "absolute";
+  // pos1.style.top = "-50px";
+  // pos1.style.left = "0";
+  // pos1.style.height = "250%";
+  // pos1.style.width = "100%";
+
+  // document.getElementsByClassName("bg1").style.backgroundSize = "100%"
+}
+
+pos1.addEventListener("click", pos1FullScreen)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const boxes = document.querySelectorAll(".card")
+// const container = document.querySelector(".carousel-container")
+
+// const shrink = (e) => {
+//   const el = e.target
+  
+//   // Remove cloned element from DOM after animation is over
+//   el.addEventListener("animationend", (e) => e.target.remove())
+
+//   // Trigger browser reflow to start animation
+//   el.style.animation = 'none';
+//   el.offsetHeight
+//   el.style.animation = ''
+//   el.classList.add("shrink-down")
+// }
+
+// const toggleFullScreen = (e) => {
+//   // Get position values for element
+//   const {
+//     top,
+//     left
+//   } = e.target.getBoundingClientRect()
+
+//   // Clone the element and its children
+//   let fullScreen = e.target.cloneNode(true)
+
+//   // Set top and left with custom property
+//   fullScreen.style.setProperty("--inset", `${top}px auto auto ${left}px`)
+
+//   // Add class with animation and position
+//   fullScreen.classList.add("full-screen")
+
+//   // Listen for click to close full screen
+//   fullScreen.addEventListener("click", shrink)
+
+//   // Place in container over element to expand
+//   container.appendChild(fullScreen)
+// }
+
+// // Add click listeners on all boxes
+// boxes.forEach(box => {
+//   box.addEventListener("click", toggleFullScreen)
+// })

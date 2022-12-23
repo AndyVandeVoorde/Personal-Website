@@ -6,7 +6,7 @@
   z-index: 1000;
   background: linear-gradient(to right, #1D2731 50%, transparent 50%) left;
   background-size: 200% 101%;
-  transition: 1000ms ease-in-out;
+  /* transition: 1000ms ease-in-out; */
   /* flex-direction: column; */
 }
 
@@ -18,11 +18,11 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  transition: 1000ms ease-in-out;
+  /* transition: 1000ms ease-in-out; */
 }
 
 .logo span {
-  transition: 1000ms ease-in-out;
+  /* transition: 1000ms ease-in-out; */
 }
 
 .header1 {
@@ -41,14 +41,14 @@
   background-size: 200% 101%;
   /* background-color: #DFDFDF; */
   z-index: 1000;
-  transition: 1000ms ease-in-out;
+  /* transition: 1000ms ease-in-out; */
   }
 
 .hamburger-container {
   width: 60px;
   height: 45px;
   position: fixed;
-  transition: 500ms ease-in-out;
+  /* transition: 500ms ease-in-out; */
   cursor: pointer;
   padding-right: 5%;
 }
@@ -60,7 +60,7 @@
   width: 45%;
   background-color: #D9B310;
   border-radius: 9px;
-  transition: 250ms ease-in-out;
+  /* transition: 250ms ease-in-out; */
   left: 0;
 }
 
